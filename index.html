@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Azteca Cooking Experience</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+
+  <!-- Correct way to load CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='assets/logo1.png') }}" type="image/png">
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="assets/logo.png" alt="Azteca Logo" />
+      <img src="{{ url_for('static', filename='assets/logo1.png') }}" alt="Azteca Logo" />
     </div>
     <nav>
       <ul>
@@ -31,7 +33,10 @@
 
     <section id="about">
       <h2>About</h2>
-      <p>Azteca was founded by Hugo Camacho Romero, inspired by generations of rich Mexican culinary tradition. Discover more <a href="assets/azteca-cooking-classes.pdf">in our brochure</a>.</p>
+      <p>
+        Azteca was founded by Hugo Camacho Romero, inspired by generations of rich Mexican culinary tradition.
+        Discover more <a href="{{ url_for('static', filename='assets/azteca-cooking-classes.pdf') }}">in our brochure</a>.
+      </p>
     </section>
 
     <section id="classes">
@@ -41,7 +46,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Have questions? Want to collaborate? <a href="mailto:info@azteca.ie">Email us</a>.</p>
+      <p>Have questions? Want to collaborate? <a href="mailto:your@email.com">Email us</a>.</p>
     </section>
   </main>
 
