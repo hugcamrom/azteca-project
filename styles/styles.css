@@ -7,24 +7,38 @@ body {
 }
 
 header {
-  background-color: #7c0a02;
+  background-color: #d9534f; /* Lighter red for better contrast */
   color: white;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   text-align: center;
 }
 
-nav {
-  background-color: #eaeaea;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5rem 0;
 }
 
 nav a {
+  color: white; /* White text for nav links */
   text-decoration: none;
-  color: #7c0a02;
   font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffeaea; /* subtle hover colour */
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
 main {
@@ -40,6 +54,6 @@ section {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #7c0a02;
+  background-color: #d9534f; /* Match new lighter header */
   color: white;
 }
