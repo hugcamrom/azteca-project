@@ -57,3 +57,36 @@ footer {
   background-color: #d9534f; /* Match new lighter header */
   color: white;
 }
+.hero {
+  background-image: url("/static/assets/hero.jpg");
+  background-size: contain;         /* Show full image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f44336;        /* Fallback background */
+  padding: 5rem 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  box-sizing: border-box;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.55);  /* subtle dark overlay */
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffd700;
+  color: #7c0a02;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
