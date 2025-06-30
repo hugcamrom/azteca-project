@@ -58,18 +58,14 @@ footer {
   color: white;
 }
 .hero {
-  background-image: url("/static/assets/hero.jpg");
-  background-size: contain;         /* Show full image */
-  background-repeat: no-repeat;
+  background-image: url("../assets/hero.jpg");  /* or hero.jpeg if you didn’t rename */
+  background-size: cover;
   background-position: center;
-  background-color: #f44336;        /* Fallback background */
-  padding: 5rem 1rem;
+  background-repeat: no-repeat;
+  padding: 8rem 1rem;
+  color: white;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
-  box-sizing: border-box;
+  position: relative;
 }
 
 .hero-overlay {
