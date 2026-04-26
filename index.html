@@ -41,10 +41,34 @@
       </p>
     </section>
 
-    <section id="classes">
-      <h2>Cooking Classes</h2>
-      <p>We offer a 3-part experience in Mexican cuisine from staples to mole and tamales. Learn, cook, and taste real flavours.</p>
-    </section>
+    <section id="gallery">
+  <h2>🍽️ Cooking Experience Gallery</h2>
+  <p>Real dishes from our classes – authentic, vibrant, and full of flavour.</p>
+
+  <div class="gallery">
+    <figure>
+      <img src="{{ url_for('static', filename='assets/huaraches.jpg') }}" alt="Huaraches">
+      <figcaption>Huaraches</figcaption>
+    </figure>
+
+    <figure>
+      <img src="{{ url_for('static', filename='assets/huevos_rancheros.jpg') }}" alt="Huevos Rancheros">
+      <figcaption>Huevos Rancheros</figcaption>
+    </figure>
+
+    <figure>
+      <img src="{{ url_for('static', filename='assets/ingredients.jpg') }}" alt="Fresh Ingredients">
+      <figcaption>Fresh Ingredients</figcaption>
+    </figure>
+
+    <figure>
+      <img src="{{ url_for('static', filename='assets/quesadillas.jpg') }}" alt="Quesadillas">
+      <figcaption>Quesadillas</figcaption>
+    </figure>
+  </div>
+
+  <a class="cta-button" href="/booking_form">Book Your Class </a>
+</section>
 
     <section id="contact">
       <h2>Contact</h2>
